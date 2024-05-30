@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: montserrat;
+}
+
+body {
+    background-color: #09924710;
+}
+
+nav {
+    height: 120px;
+    width: 800px;
+    margin: auto;
+}
+
+nav img {
+    max-height: 70%;
+    padding: 10px;
+}
+
+main {
+    margin: 40px auto auto auto;
+    display: flex;
+    max-width: 1200px;
+}
+
+.slogan-texto span {
+    color: #099247;
+    font-weight: bold;
+}
+
+.slogan {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.simulador {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #b21319;
+    max-width: 350px;
+}
+
+.simulador h1 {
+    font-size: 25px;
+}
+
+@media (max-width:1050px) {
+    .slogan {
+        padding: 20px;
+    }
+    .slogan h1 {
+        font-size: 22px;
+    }
+
+    .parcelas-reduzidas img {
+        max-width: 100%;
+    }
+
+    nav img {
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (max-width:760px) {
+
+    main {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+    .simulador {
+        order: 1;
+        margin: auto;
+    }
+    .slogan {
+        order: 2;
+    }
+    
+    nav {
+        width: auto;
+    }
+}
+
+.botões {
+    max-width: 320px;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: gainsboro;
+}
+
+.botões h4 {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.simulador-etapa-1-motivo, .simulador-etapa-1-valor {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.simulador-etapa-1-valor {
+    text-align: center;
+}
+
+.simulador-etapa-1-motivo-imóvel, .simulador-etapa-1-motivo-veículo, .simulador-etapa-1-motivo-serviço {
+    display: none;
+}
+
+.simulador-etapa-1-motivo-serviço-outro, .simulador-etapa-1-motivo-veículo-outro, .simulador-etapa-1-motivo-imóvel-outro {
+    display: none;
+}
+
+.simulador-etapa-1 input {
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    font-size: 15px;
+    margin: 10px auto;
+    padding-top: 4px;
+}
+
+.simulador-etapa-2 {
+    display: none;
+}
+
+.simulador-etapa-2 button {
+    width: 270px;
+    font-size: 25px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 128, 0, 0.774);
+    color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+.simulador-etapa-2 button p {
+    margin: auto;
+}
+
+.simulador-etapa-2 button img {
+    height: 40px;
+    margin: auto;
+    display: block;
+}
+
+.bt-enviar-motivo {
+    max-width: 320px;
+    font-size: 23px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: none;
+    background-color: #b21319;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bt-enviar-motivo:hover {
+    background-color: #b21318a8;
+
+}
+
+.valores {
+    max-width: 320px;
+    margin: auto;
+}
+
+.parcelas-reduzidas {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.span1 {
+    text-decoration:line-through;
+    color: #b21319;
+}
+
+.span2 {
+    color: #099247;
+}
+
+footer {
+    height: 100px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer img {
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+
+.parceiros {
+    text-align: center;
+}
+
+.inputs-form {
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.inputs-form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-size: 18px;
+    height: 35px;
+}
