@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="img/logo 2.png" alt="">
+    </nav>
+    <main>
+        <div class="slogan">
+            <div class="slogan-texto">
+                <h1>Somos <span>especialistas em consórcio</span></h1>
+                <h1>e oferecemos taxas a partir de <span>0,08%</span> ao mês que cabem no seu bolso.</h1>
+            </div>
+            
+            <div class="parcelas-reduzidas">
+                <img src="img/reduzidas.png" alt="">
+                <h1>de <span class="span1">R$ 1.127,27</span> por <span class="span2">R$ 672,73</span> até a contemplação!</h1>
+            </div>
+        </div>
+        <div class="simulador">
+            <h1>Simule seu consórcio</h1>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input id="redirect" type="hidden" name="redirect">        
+                <input type="hidden" name="access_key" value="9d9d4480-e4dd-4be6-a774-e8f715058f6d">
+                <input id="input-consórcio" type="text" hidden name="consórcio">
+                <input id="input-carta" type="text" hidden name="carta">
+                <input id="input-valor" type="text" hidden name="valor">
+
+                <div id="simulador-etapa-1" class="simulador-etapa-1">
+                    <p>Primeira etapa: nos conte seu plano.</p>
+                    <div id="simulador-etapa-1-motivo" class="simulador-etapa-1-motivo">
+                        <p>Escolha sua próxima conquista:</p>
+                        <div class="botões">
+                            <h4 id="bt-imóveis">Imóveis</h4>
+                            <h4 id="bt-veículos">Veículos</h4>
+                            <h4 id="bt-serviços">Serviços</h4>
+                        </div>
+                    </div>
+                    <div id="simulador-etapa-1-valor" class="simulador-etapa-1-valor">
+                        <p>Simule o plano por:</p>
+                        <div class="botões">
+                            <h4 id="bt-parcela">Parcela</h4>
+                            <h4 id="bt-crédito">Crédito</h4>
+                        </div>
+
+                        <div class="valores">
+                            <input id="range" class="range" type="range">
+                            <h1 id="range-valor" class="range-valor"></h1>
+                        </div>
+                        
+                        <h4 id="bt-enviar-motivo" class="bt-enviar-motivo">Enviar</h4>
+                    </div>
+                </div>
+                <div id="simulador-etapa-2" class="simulador-etapa-2">
+                    <p>Segunda etapa:</p>
+                    <h3>Entenda!</h3>
+                    <p>Nem todos os bens de consumo e serviços são aprovados para receber uma carta de crédito. Por isso, é necessário entrar em contato com um especialista para aprovar o seu pedido. Nos informe seus dados:</p>
+                    <div class="inputs-form">
+                        <input id="input_nome" type="text" name="nome" required placeholder="Insira seu nome">
+                        <input id="input_wtsp" type="text" name="whatsapp" required placeholder="Insira seu Whatsapp (DDD+Cel)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+                        <input id="input_email" type="email" name="email" placeholder="Insira seu e-mail">
+                    </div>
+                    
+                    <button id="pedido_final"><p>Enviar pedido</p><img src="img/whatsapp.png" alt=""></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <footer>
+        <div class="parceiros">
+            <p>Autorizados</p>
+            <img src="img/ademicon.png" alt="">
+            <p>Ademicon</p>
+        </div>
+    </footer>
+</body>
+</html>
